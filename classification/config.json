@@ -1,0 +1,22 @@
+{
+    "model_name_or_path": "google/vit-base-patch16-224-in21k",
+    "dataset_name": "./dataset/google_play/classification/dataset.py",
+    "output_dir": "./outputs/vit-base",
+    "remove_unused_columns": false,
+    "do_train": true,
+    "learning_rate": 2e-5,
+    "num_train_epochs": 5,
+    "per_device_train_batch_size": 64,
+    "per_device_eval_batch_size": 64,
+    "logging_strategy": "steps",
+    "logging_steps": 10,
+    "load_best_model_at_end": true,
+    "save_total_limit": 1,
+    "ignore_mismatched_sizes": true,
+
+    "do_eval": true,
+    "train_val_split": 0.2,
+    "evaluation_strategy": "epoch",
+    "save_strategy": "epoch",
+    "seed": 916
+}

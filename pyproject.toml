@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "guing"
+version = "0.1.0"
+description = ""
+authors = ["Jialiang Wei <jialiang.wei@mines-ales.fr>"]
+readme = "README.md"
+packages = [{include = "guing"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+pandas = "^2.1.1"
+numpy = "<1.24"
+google-play-scraper = "^1.2.4"
+tqdm = "^4.66.1"
+clip = {git = "https://github.com/openai/CLIP.git"}
+transformers = "4.33.2"
+pillow = "^10.1.0"
+torch = ">=2.0.0, !=2.0.1, !=2.1.0"
+jsonlines = "^4.0.0"
+datasets = "^2.14.6"
+torchvision = ">=0.15,<1.0"
+accelerate = "^0.24.0"
+pymongo = {extras = ["srv"], version = "^4.5.0"}
+paddlepaddle-gpu = "^2.5.2"
+paddleocr = ">=2.0.1"
+opencv-python = "^4.8.1.78"
+evaluate = "^0.4.1"
+scikit-learn = "^1.3.2"
+fastapi = "^0.104.1"
+albumentations = "^1.3.1"
+timm = "0.4.12"
+torchmetrics = "^1.2.0"
+lingua-language-detector = "^2.0.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+sentence-transformers = "^2.2.2"
+python-multipart = "^0.0.6"
+faiss-cpu = "^1.7.4"
+websockets = "^12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

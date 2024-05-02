@@ -1,0 +1,40 @@
+label.selectable-img {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+label.selectable-img::before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
+:checked+label.selectable-img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px;
+}
+
+:checked+label.selectable-img::before {
+    content: "✓";
+    background-color: grey;
+    transform: scale(1);
+}
+
+:checked+label.selectable-img img {
+    box-shadow: 0 0 5px #333;
+    z-index: -10;
+}

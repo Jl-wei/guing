@@ -1,0 +1,10 @@
+Please note that the data and code can only be used for academic purpose.
+It is not allowed to share the data or code with others.
+
+In any publication you are using the code or dataset, please cite the paper:
+
+@misc{wei2024guing,
+      title={GUing: A Mobile GUI Search Engine using a Vision-Language Model}, 
+      author={Jialiang Wei and Anne-Lise Courbis and Thomas Lambolais and Binbin Xu and Pierre Louis Bernard and Gérard Dray and Walid Maalej},
+      year={2024},
+}
