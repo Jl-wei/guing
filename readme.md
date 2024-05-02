@@ -13,7 +13,10 @@ If you find our work useful, please cite our paper:
 @misc{wei2024guing,
       title={GUing: A Mobile GUI Search Engine using a Vision-Language Model}, 
       author={Jialiang Wei and Anne-Lise Courbis and Thomas Lambolais and Binbin Xu and Pierre Louis Bernard and Gérard Dray and Walid Maalej},
-      year={2024}
+      year={2024},
+      eprint={2405.00145},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
 }
 ```
 
