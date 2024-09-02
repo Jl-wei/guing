@@ -1,6 +1,6 @@
 # GUing: A Mobile GUI Search Engine using a Vision-Language Model
 
-GUing is a GUI search engine based on a large vision-language model called UIClip, which we trained specifically for the app GUI domain.
+GUing is a GUI search engine based on a large vision-language model called GUIClip, which we trained specifically for the app GUI domain.
 For this, we first collected app introduction images from Google Play, which usually display the most representative screenshots selected and often captioned (i.e.~labeled) by app vendors.
 Then, we developed an automated pipeline to classify, crop, and extract the captions from these images.
 This finally results in a large dataset which we share with this paper: including 303k app screenshots, out of which 135k have captions.
@@ -35,23 +35,23 @@ export GUI_SEARCH_ROOT_PATH= your project path
 export MONGODB_URI= your mongodb uri
 ```
 
-## UIClip
+## GUIClip
 
-You can find our `UIClip` model that was pretrained on GPSCap, Screen2Words and Clarity dataset at: https://huggingface.co/Jl-wei/uiclip-vit-base-patch32
+You can find our `GUIClip` model that was pretrained on SCapRepo, Screen2Words and Clarity dataset at: https://huggingface.co/Jl-wei/guiclip-vit-base-patch32
 
-### UIClip for GUI retrieval
+### GUIClip for GUI retrieval
 
-The code for UIClip training and testing is in the `retrieval` folder.
+The code for GUIClip training and testing is in the `retrieval` folder.
 
 To train the classifier, use the `train_clip.py` script.
 
 To run the classifier on whole dataset, use the `test.py` script.
 
-### UIClip for image classification
+### GUIClip for image classification
 
 The code is in the `more_applications/classification` folder.
 
-### UIClip for text-to-sketch retrieval
+### GUIClip for text-to-sketch retrieval
 
 The code is in the `more_applications/sketch` folder.
 
@@ -59,7 +59,7 @@ The code is in the `more_applications/sketch` folder.
 
 ## Dataset
 
-The labels for the `GPSCap` (Google Play Screenshot Caption) dataset are available at `dataset/google_play/captioning`. Due to their substantial size, we are unable to provide the images directly. However, you can download these images from Google Play using the IDs provided in the `data.jsonl` file, and then crop them according to the specified bounding boxes.
+The labels for the `SCapRepo` (Google Play Screenshot Caption) dataset are available at `dataset/google_play/captioning`. Due to their substantial size, we are unable to provide the images directly. However, you can download these images from Google Play using the IDs provided in the `data.jsonl` file, and then crop them according to the specified bounding boxes.
 
 The datasets utilized for training the image classifier (`dataset/google_play/classification`) and the screen cropper (`dataset/google_play/detection`) will be released upon the acceptance of our paper.
 
