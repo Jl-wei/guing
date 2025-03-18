@@ -16,7 +16,7 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description='')
     parser.add_argument('-i', '--images_path')
-    parser.add_argument('-m', '--model_path')
+    parser.add_argument('-m', '--model_path', default="Jl-wei/app-intro-img-cropper")
     
     args = parser.parse_args()
     images_path = args.images_path

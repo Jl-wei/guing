@@ -10,13 +10,13 @@ import jsonlines
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='')
     parser.add_argument('-i', '--images_path')
-    parser.add_argument('-m', '--model_path')
+    parser.add_argument('-m', '--model_path', default="Jl-wei/app-intro-img-classifier")
 
     args = parser.parse_args()
     images_path = args.images_path
     model_path = args.model_path
 
-    classifier = pipeline("image-classification", model=model_path, device=0)
+    classifier = pipeline("image-classification", model="model_path", device=0)
 
     with jsonlines.open("./prediction.jsonl", mode='w') as writer:
         for app_id in tqdm(os.listdir(images_path)):
