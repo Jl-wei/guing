@@ -13,15 +13,13 @@ If you find our work useful, please cite our paper:
 @article{wei2024guing,
       author = {Wei, Jialiang and Courbis, Anne-Lise and Lambolais, Thomas and Xu, Binbin and Bernard, Pierre Louis and Dray, G\'{e}rard and Maalej, Walid},
       title = {GUing: A Mobile GUI Search Engine using a Vision-Language Model},
-      year = {2024},
-      publisher = {Association for Computing Machinery},
-      address = {New York, NY, USA},
-      issn = {1049-331X},
-      url = {https://doi.org/10.1145/3702993},
+      year = {2025},
+      volume = {34},
+      number = {4},
       doi = {10.1145/3702993},
-      note = {Just Accepted},
       journal = {ACM Trans. Softw. Eng. Methodol.},
-      month = nov
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA}
 }
 ```
 
